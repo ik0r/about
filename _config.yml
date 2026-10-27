@@ -93,7 +93,7 @@ iLotus:
       icon: fa fa-user
       class: home
     - text: Github
-      url: https://github.com/Treri/
+      url: https://github.com/ik0r
       icon: fa fa-github-square
       class: none
 
