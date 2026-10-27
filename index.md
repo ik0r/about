@@ -19,18 +19,23 @@ title: 关于我
 
 | 时间            | 公司                   | 职位           |
 |-----------------|------------------------|----------------|
-| 2023.8 - NOW    | 字节跳动 | 前端开发工程师 |
+| 2023.8 - 2026.7 | 字节跳动 | 前端开发工程师 |
 | 2017.2 - 2023.8 | 美团(北京三快在线科技有限公司) | 前端开发工程师 |
 | 2014.6 - 2017.2 | 北京微酷客科技有限公司 | 前端开发工程师 |
 | 2013.3 - 2014.5 | 高德软件有限公司       | 前端开发工程师 |
 
 ## 项目经验
 
-1. 飞书合同PC端及小程序
-    - 时间: 2023.10 -- NOW
+1. 飞书合同 Web 端、小程序及电子牵平台前端
+    - 时间: 2023.10 -- 2026.7
+    - 项目简述: 飞书合同是飞书旗下的电子合同产品, 覆盖合同起草、审批、签署、归档等全流程; 同时负责电子签名平台电子牵(<https://www.letsign.com/>)的 Web 前端.
     - 个人职责:
-        - 飞书合同PC端前端开发
-        - 飞书合同小程序前端开发
+        - 负责飞书合同 Web 端、小程序端(基于 Taro)及电子牵平台 Web 前端的业务开发与维护, 技术栈为 React + TypeScript, CSS 方案使用 styled-components
+        - 主导飞书合同 Web 端构建系统升级, 将构建系统从基于 Webpack 的 Jupiter 迁移到基于 Rspack 的 Edenx, 解决迁移过程中遇到的各类构建兼容问题, 最终构建耗时降低 80%+, 显著提升开发效率, 且升级过程无线上问题
+        - 负责飞书合同 Web 端稳定性保障与错误监控相关工作
+        - 负责飞书合同内 WPS SDK 的接入与后续维护工作
+        - 负责前端状态管理方案的统一, 状态管理库收敛到 zustand, 并结合 react-query / swr 管理服务端状态; 业务中大量使用 rxjs 处理异步数据流
+        - 沉淀技术文档《TypeScript 类型体操基础》与《结合飞书合同中的应用学习 rxjs》, 用于团队技术分享与新人上手
 
 1. 美团配送骑手业务小程序技术架构
     - 时间: 2020.4 -- 2023.8
@@ -149,19 +154,25 @@ title: 关于我
         2. 利用jQuery, 完成用户界面的所有交互性功能
         3. 一些简单的页面SEO工作
 
+## 技术输出
+
+- 《TypeScript 类型体操基础》: 系统梳理 TypeScript 类型系统, 覆盖条件类型、映射类型、递归类型、keyof、extends 类型约束及 infer 类型推断等高级类型用法, 用于团队内 TypeScript 能力建设与分享.
+- 《结合飞书合同中的应用学习 rxjs》: 结合飞书合同实际代码, 梳理项目中使用的 Observable、Subject、Scheduler 及常用 Operators, 并说明其在业务代码中的作用, 降低团队理解和维护 rxjs 相关代码的成本.
+
 ## 职业技能
 
 - 一定的前端架构能力, 主导过多个复杂前端项目(Web端, 小程序, React-Native)的完整架构及技术选型, 对 monorepo 代码组织方式熟悉并有实践
-- 熟悉原生JS及流行的前端库或框架, 具备 React, Vue, React-Native, 微信小程序开发能力.
-- 具备自动化构建经验, 熟悉流行的构建系统(Grunt, Gulp, Webpack), 主导过多个项目的构建系统的搭建
-- 熟悉TypeScript, 并对个人的大部分library添加typescript定义文件, 部分了解 ts 类型体操相关内容并有相关实践
+- 熟悉原生JS及流行的前端库或框架, 具备 React, Vue, React-Native, 小程序开发能力; 日常以 React + TypeScript 为主, 熟悉 Taro 小程序框架、zustand、react-query / swr 及 styled-components 等方案
+- 具备丰富的前端工程化及构建经验, 熟悉 Webpack、Rspack 等构建工具以及 Edenx(开源实现对应 Modern.js)构建体系, 主导过多个项目的构建系统搭建, 并完成 Webpack 到 Rspack 的构建系统迁移
+- 熟悉TypeScript, 并对个人的大部分library添加typescript定义文件, 熟悉 ts 类型体操相关内容并有相关实践
+- 熟悉 rxjs 响应式编程范式, 有在大型项目中大量使用 Observable、Subject、Scheduler 及各类 Operators 处理异步数据流的实践经验
 - 熟悉各Web地图SDK的相关概念及使用.
 - 有微信公众号网站及Hybrid App(jsbridge)开发经验
 - 对Node.js有相关开发经验, 开发过骑手年终盘点后端服务. 早期使用 Express, koa, mongoDB 等其它工具构建过博客程序, 日常使用并写过一些node modules
-- 熟悉CSS2, CSS3及css preprocesser(SASS, LESS), postcss等css处理器
+- 熟悉CSS2, CSS3及css preprocesser(SASS, LESS), postcss等css处理器, 熟悉 styled-components 等 CSS-in-JS 方案
 - 使用过前端测试框架 Karma Mocha 及 Expect.js Should.js等
 - 熟练使用Git进行版本控制, 并熟悉Github workflow 及 gitflow
-- 负责多个项目的稳定性保障建设, 对稳定性保障有较深入的了解
+- 负责多个项目的稳定性保障建设, 覆盖错误监控、日志上报、告警及故障定位, 对稳定性保障有较深入的了解
 
 ## 其它技能
 - 熟悉 Linux, Mac 操作系统, 多年 Linux 使用经验, 09年开始使用\*nix系统(Debian, Ubuntu, Fedora, CentOS, Gentoo), 对Linux目录结构、权限、配置等比较熟悉, 能在\*nix环境下快速进行开发
