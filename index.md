@@ -9,7 +9,7 @@ title: 关于我
 - 年龄: From 1990
 - QQ: 83692901
 - 手机号码: 18501335721
-- GitHub: <http://github.com/wyntau>
+- GitHub: <https://github.com/ik0r>
 - 博客: <http://isay.me>
 - 毕业学校: 中国海洋大学(2009 - 2013)
 - 专业: 通信工程
