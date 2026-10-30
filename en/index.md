@@ -4,103 +4,75 @@ title: About
 ---
 
 ## Profile
-- Name: Liu wentao(Treri Liu)
-- Email: lwent90@gmail.com
-- Age: From 1990
-- QQ: 83692901
-- Tel: 18501335721
-- GitHub: <http://github.com/Treri>
-- Blog: <http://iSay.me>
+
+Front-end engineer with 13+ years of experience (since 2013). Joined ByteDance in 2023.08; since 2023.10, led the front-end of Feishu Contract Web, from core-module development to overall ownership, and led the Web team (10 people, later 4) on work allocation, scheduling and delivery. Strong in React + TypeScript and front-end engineering; led the Webpack → Rspack migration, cutting build time by 80%+ with no production incidents. Experienced in stability engineering and error monitoring for large-scale B2B products, and in Web / mini-program / React Native multi-platform architecture.
+
+## Details
+
+- Name: Liu Wentao (ik0r)
+- Email: jobs@ik0r.com
+- Phone: 18501335721
+- GitHub: <https://github.com/ik0r>
+- Blog: <http://isay.me>
 
 ## Work Experience
 
-| period            | company                   | station           |
-|-----------------|------------------------|----------------|
-| 2014.6 ~ 2017.1 | 北京微酷客科技有限公司 | Front End Engineer |
-| 2013.3 ~ 2014.5 | AutoNavi Software Co., Ltd. | Front End Engineer |
+| Period | Company | Role |
+| --- | --- | --- |
+| 2023.08 – 2026.07 | ByteDance | Front-end Lead |
+| 2017.02 – 2023.08 | Meituan (Beijing Sankuai Online Technology Co., Ltd.) | Front-end Engineer |
+| 2014.06 – 2017.02 | Beijing Weikuke Technology Co., Ltd. | Front-end Engineer |
+| 2013.03 – 2014.05 | AutoNavi Software Co., Ltd. (Amap) | Front-end Engineer (intern 2013.03–2013.07) |
 
 ## Project Experience
 
-1. (***)味库买菜帮手
+### ByteDance · Feishu Contract Web, Mini Program and LetSign Platform (2023.10 – 2026.07)
 
-    - period: 2014.11 ~ 2017.1
-    - brief: wechat electric commerce website.
-    - website: <http://m.wecook.cn/> / <http://seafood.wecook.cn>
-    - responsibility:
+- Overview: Feishu Contract is Feishu's one-stop contract lifecycle management product, covering drafting, online negotiation, review and approval, signing, performance and analytics, serving several leading enterprise customers. Also responsible for the Web front-end of the LetSign (<https://www.letsign.com/>) e-signature platform.
+- Responsibilities:
+    - As front-end owner of Feishu Contract Web, led the overall front-end effort and drove the architecture and iteration of core modules: online negotiation (China and non-China regions), contract status transitions and approval flows, multi-party signing and sealing/archiving, admin-side process and field management, bulk contract applications, contract ledger, and contract templates. Also developed and maintained the Feishu Contract mini program (Taro) and the LetSign platform Web front-end.
+    - Led the Web team (10 people, later 4) on work allocation, scheduling and delivery, while remaining hands-on in core modules.
+    - Led the build system migration from Webpack (Jupiter) to Rspack (Edenx), resolved build compatibility issues, cut build time by 80%+, and shipped with no production incidents.
+    - For online negotiation, where multiple parties are online simultaneously and events come from many sources, used rxjs Subject and Operators to unify event streams, covering aggregation, dispatch and subscription cleanup, reducing races and state inconsistency across sources.
+    - Owned Web stability and error monitoring; participated in the continuous delivery pipeline (automated builds, swimlane environment verification, gradual rollout) and on-call response; integrated and maintained the WPS SDK in Feishu Contract.
+    - Gated feature visibility by permission flags issued by the backend and rendered contract-sensitive data according to desensitization results, meeting enterprise customers' access-control and data-security requirements.
 
-        1. front end project architecture and technology selection based on Angular.js in order for concurrent development and fast deployment.
-        2. set up full front end build system and upgrade build tools from source code to Grunt, then Gulp, then Webpack, then FIS3.
-        3. work out the standard of code commit and audit, and normalize the usage of git and git commit, to make whole project code style uniform.
-        4. most development of front end source code, and a few back end source code.
+### Meituan · Delivery Front-end Architecture and Stability (2017.02 – 2023.08)
 
-2. (***)lightweight TaoBao magic pen editor system, supporting generate structural data and render pictures
+- Overview: Owned front-end architecture, build systems and stability for Meituan delivery rider-facing Web, React Native (MRN) and mini-program products, covering architecture iteration, multi-platform integration, error monitoring and incident handling.
+- Responsibilities:
+    - **Web and MRN architecture** (2017.02 – 2023.08): Owned the architecture and build system for all H5 and some admin pages, using a monorepo and per-directory/per-page deployments; led the MRN architecture upgrade, collecting developer pain points and fixing them at the framework level, while also building business pages; drove the upgrade and migration of the rider app's Hybrid Web container (KNB); built a unified scaffolding tool for Web, MRN and mini-program projects based on @angular-devkit/schematics.
+    - **Front-end stability program** (2018.03 – 2023.08): Upgraded mini-program, Web and MRN architectures with error, API and log reporting; defined stability development standards with checkpoints at key stages, and built front-end failure playbooks for each page; defined stability metrics and tuned alerting policies; documented troubleshooting practices and promoted log-query tooling (SQL, Presto, Hive, Kibana) across the team.
+    - **Rider mini-program architecture** (2020.04 – 2023.08): Built the delivery-locker mini program from 0 to 1, defining its architecture, processes and development standards; designed and implemented a multi-app monorepo architecture using Rollup, Gulp, ESLint, TypeScript and in-house tooling, enabling code sharing and reuse across 4 mini programs (delivery lockers, battery-swap lockers and their operations apps); drove the rider app's adoption of the Meituan mini-program SDK, unifying the delivery-locker app from a "mini program + React Native" stack to a single mini-program stack and integrating it into Meituan Crowdsourcing and Meituan Dedicated Delivery.
+    - **Map migration adapter library** (2017.08 – 2018.05): During the company-wide move away from Amap, researched API, feature and coordinate-system differences across Amap, Tencent, Baidu and Google Maps; designed and implemented an adapter architecture with seed → loader → lib layered loading, supporting map selection and automatic fallback; coordinated the department-wide Web migration from Amap to Tencent Maps.
 
-    - period: 2016.1 ~ 2016.6
-    - brief: a CMS editor supporting WYSIWYG(what you see is what you get), supporting drag, scale and other actions on elements, supporting generate activity page fastly, supporting generate structural data.
-    - responsibility:
+### Early Projects (2013.03 – 2017.01)
 
-        1. front end project architecture and technology selection
-        2. development of front end source code
-        3. abstract and reuse component
-        4. define data format and interactive method
+- **WeCook grocery assistant** (2014.11 – 2017.01): Web and WeChat platform products "Weiwei Gourmet / Maicai Bangshou / WeCook Seafood" (<http://m.wecook.cn/>, <http://seafood.wecook.cn>), helping users buy fresh semi-prepared food. Built the front-end architecture and tech selection on AngularJS; set up the full build system, evolving from source publishing → Grunt → Gulp → Webpack → FIS3; established commit conventions; delivered most of the front-end and part of the back-end.
+- **Lightweight visual page editor (Taobao Magic Pen-like)** (2016.01 – 2016.06): A WYSIWYG content editor, similar to a simplified PowerPoint, supporting drag and resize to help operations teams quickly generate campaign and product pages, with structured output for reuse across platforms. Owned front-end architecture and tech selection, build system setup, reusable component abstraction, and front-end/back-end data contracts.
+- **Amap Web and mobile products** (2013.03 – 2014.05): Worked on Amap PC POI detail pages, the mobile Web SPA, AMap JS API 2.0 and the front-end vector map. Owned tech selection and architecture for the mobile Web SPA from 0 to 1, ensuring URL re-entrancy across single-page states; contributed to AMap JS API 2.0, building overlays such as Marker, InfoWindow and context menu, and extracted a reusable library based on Google Maps' MVCObject pattern; explored HTML5 Canvas-based vector map tile rendering and performance optimization.
 
-2. (**)Amap mobile website
+## Technical Writing
 
-    - period: 2014.1 ~ 2014.6
-    - brief: An web implemention of Amap native app
-    - responsibility:
+- "TypeScript Type Challenges" — internal tech talk. Systematically covered conditional types, mapped types, recursive types, keyof, extends constraints and infer, to build team TypeScript expertise.
+- "Learning RxJS with Feishu Contract" — internal tech talk. Walked through Observable, Subject, Scheduler and common Operators as used in the actual codebase, lowering the team's cost of understanding and maintaining rxjs code.
 
-        1. front end project architecture and technology selection of the Single Page App, supporting different state and reload of URL
-        2. development of front end modules, e.g. search, map render, nearby search and settings. And the css layout and javascript code.
-        3. integrate or separate different demand
+## Skills
 
-3. (*)Amap JS API 2.0
+- **Front-end architecture and leadership**: Led complete architecture and tech selection for complex Web, mini-program and React Native projects; monorepo experience; led work allocation, scheduling and delivery for a 10-person team while staying hands-on in core modules.
+- **Stack**: React + TypeScript as primary; familiar with Vue, React Native and Taro; zustand for state, react-query / swr for server state, styled-components for styling; multilingual support via a copy-management platform and react-i18n.
+- **Engineering and build**: Webpack, Rspack and Edenx (based on Modern.js); led build system setup across multiple projects and completed the Webpack → Rspack migration.
+- **Type system**: Deep familiarity with TypeScript's type system and type-level programming; added type definitions to most libraries I maintain.
+- **Reactive programming**: Experienced with rxjs; used Observable, Subject, Scheduler and Operators to handle asynchronous event streams in large projects.
+- **Stability**: Built stability practices across multiple projects, covering error monitoring, log reporting, alerting and troubleshooting.
+- **Other**: WeChat official accounts and Hybrid App (JSBridge); Amap, Tencent, Baidu and Google Maps SDKs; Node.js (Express, Koa, MongoDB); CSS2/CSS3, SASS/LESS, PostCSS; Karma and Mocha; Git with GitHub workflow and gitflow.
 
-    - period: 2013.10 ~ 2013.12
-    - responsibility:
+## Other Skills
 
-        1. development of overlay Marker, Infowindow and context menu in API 2.0
-        2. separate out mvcobject library from google maps API.
-        3. development of debug mode of Amap API 2.0
+- Linux and macOS user since 2009 (*nix: Debian, Ubuntu, Fedora, CentOS, Gentoo), comfortable with directory structure, permissions and configuration; Docker, docker-compose, nginx and Traefik.
+- Early PHP experience: built 3 WordPress themes; familiar with ThinkPHP.
 
-4. vector map render and optimize based on html5
+## Education
 
-    - period: 2013.6 ~ 2013.10
-    - responsibility: vector map render and optimize based on html5. improve the interactive speed between map and user.
-
-5. (*)amap CokeFusion web tool
-
-    - period: 2013.4 ~ 2013.5
-    - brief: manage the map data on table and visual map based on html5, supporting edit, preview, query, filter etc.
-    - responsibility:
-
-        1. front end project architecture and technology selection
-        2. all front end code
-        3. all interactive actions to map data
-
-6. detail page on amap poi
-
-    - period: 2013.3 ~ 2013.4
-    - responsibility:
-
-        1. front end code development
-        2. interactive actions
-        3. SEO
-
-## Vocational skills
-
-- ability of front end architecture. familiar with Angular.js technology stack and Vue.js technology stack
-- familiar with front end build system, such as Grunt, Gulp, Webpack, FIS3
-- familiar with TypeScript, CoffeeScript etc.
-- familiar with Wechat website and Hybrid App(jsbridge) development. have usage experience of ionic
-- have development experience of Node.js and some node modules such as Express, Koa, mongoDB etc.
-- familiar with native javascript and some libraries or frameworks, such as jQuery, Angular.js and Vue.js
-- familiar with CSS2, CSS3, css preprocesser(SASS, LESS), postcss
-- have usage experience of test libraries or frameworks, such as karma, mocha, expect.js and should.js
-- expertly usage of git source control, familiar with github workflow and gitflow
-
-## Other skills
-- familiar with Linux and mac Operation System. Use \*nix system(Debian, Ubuntu, Fedora, CentOS, Gentoo) from 2009
-- expertly usage of markdown and document writing with markdown
-- have development experience of PHP. wrote 3 wordpress themes.
-- learned a few of python, shell and mysql etc.
+- 2009 – 2013 · Ocean University of China · Communication Engineering
+- English: CET-6

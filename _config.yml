@@ -92,16 +92,20 @@ iLotus:
       url: /
       icon: fa fa-user
       class: home
+    - text: English
+      url: /en/
+      icon: fa fa-globe
+      class: none
     - text: Github
       url: https://github.com/ik0r
       icon: fa fa-github-square
       class: none
 
 #站点基础配置
-title: Treri
-subTitle: Treri 的个人简历
-description: ""
-keywords: ""
+title: 刘文涛（ik0r）
+subTitle: 刘文涛的简历
+description: "刘文涛（ik0r）的个人简历"
+keywords: "刘文涛, ik0r, 前端工程师, 简历"
 
 author:
-  name: Treri
+  name: 刘文涛（ik0r）
