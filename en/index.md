@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Liu Wentao — Resume
+description: "Liu Wentao (ik0r), front-end lead with 13+ years of experience in React, TypeScript, front-end engineering and Web / mini-program / React Native architecture."
 ---
 
 ## Profile
 
 Front-end engineer with 13+ years of experience (since 2013). Joined ByteDance in 2023.08; since 2023.10, led the front-end of Feishu Contract Web, from core-module development to overall ownership, and led the Web team (10 people, later 4) on work allocation, scheduling and delivery. Strong in React + TypeScript and front-end engineering; led the Webpack → Rspack migration, cutting build time by 80%+ with no production incidents. Experienced in stability engineering and error monitoring for large-scale B2B products, and in Web / mini-program / React Native multi-platform architecture.
 
-## Details
+## Contact
 
 - Name: Liu Wentao (ik0r)
 - Open to: Front-end Lead / Senior Front-end Engineer
@@ -35,7 +36,7 @@ Front-end engineer with 13+ years of experience (since 2013). Joined ByteDance i
     - Led the Web team (10 people, later 4) on work allocation, scheduling and delivery, while remaining hands-on in core modules.
     - Led the build system migration from Webpack (Jupiter) to Rspack (Edenx), resolved build compatibility issues, cut build time by 80%+, and shipped with no production incidents.
     - For online negotiation, where multiple parties are online simultaneously and events come from many sources, used rxjs Subject and Operators to unify event streams, covering aggregation, dispatch and subscription cleanup, reducing races and state inconsistency across sources.
-    - Owned Web stability and error monitoring; participated in the continuous delivery pipeline (automated builds, swimlane environment verification, gradual rollout) and on-call response; integrated and maintained the WPS SDK in Feishu Contract.
+    - Owned Web stability and error monitoring; participated in the continuous delivery pipeline (automated builds, isolated swimlane environment verification, gradual rollout) and on-call response; integrated and maintained the WPS SDK in Feishu Contract.
     - Gated feature visibility by permission flags issued by the backend and rendered contract-sensitive data according to desensitization results, meeting enterprise customers' access-control and data-security requirements.
 
 ### Meituan · Delivery Front-end Architecture and Stability (2017.02 – 2023.08)
@@ -49,12 +50,13 @@ Front-end engineer with 13+ years of experience (since 2013). Joined ByteDance i
 
 ### Early Projects (2013.03 – 2017.01)
 
-- **WeCook grocery assistant** (2014.11 – 2017.01): Web and WeChat platform products "Weiwei Gourmet / Maicai Bangshou / WeCook Seafood", helping users buy fresh semi-prepared food. Built the front-end architecture and tech selection on AngularJS; set up the full build system, evolving from source publishing → Grunt → Gulp → Webpack → FIS3; established commit conventions; delivered most of the front-end and part of the back-end.
+- **WeCook grocery assistant** (2014.11 – 2017.01, a Weikuke product): Web and WeChat platform products "Weiwei Gourmet / Maicai Bangshou / WeCook Seafood", helping users buy fresh semi-prepared food. Built the front-end architecture and tech selection on AngularJS; set up the full build system, evolving from source publishing → Grunt → Gulp → Webpack → FIS3; established commit conventions; delivered most of the front-end and part of the back-end.
 - **Lightweight visual page editor (Taobao Magic Pen-like, internal experiment at WeCook)** (2016.01 – 2016.06): A WYSIWYG content editor, similar to a simplified PowerPoint, supporting drag and resize to help operations teams quickly generate campaign and product pages, with structured output for reuse across platforms. Owned front-end architecture and tech selection, build system setup, reusable component abstraction, and front-end/back-end data contracts.
 - **Amap Web and mobile products** (2013.03 – 2014.05): Worked on Amap PC POI detail pages, the mobile Web SPA, AMap JS API 2.0 and the front-end vector map. Owned tech selection and architecture for the mobile Web SPA from 0 to 1, ensuring URL re-entrancy across single-page states; contributed to AMap JS API 2.0, building overlays such as Marker, InfoWindow and context menu, and extracted a reusable library based on Google Maps' MVCObject pattern; explored HTML5 Canvas-based vector map tile rendering and performance optimization.
 
-## Technical Writing
+## Open Source & Writing
 
+- **Open source**: 74 original public repositories (excluding forks) and 1,000+ stars on GitHub (<https://github.com/ik0r>).
 - "TypeScript Type Challenges" — internal tech talk. Systematically covered conditional types, mapped types, recursive types, keyof, extends constraints and infer, to build team TypeScript expertise.
 - "Learning RxJS with Feishu Contract" — internal tech talk. Walked through Observable, Subject, Scheduler and common Operators as used in the actual codebase, lowering the team's cost of understanding and maintaining rxjs code.
 
@@ -66,7 +68,7 @@ Front-end engineer with 13+ years of experience (since 2013). Joined ByteDance i
 - **Type system**: Deep familiarity with TypeScript's type system and type-level programming; added type definitions to most libraries I maintain.
 - **Reactive programming**: Experienced with rxjs; used Observable, Subject, Scheduler and Operators to handle asynchronous event streams in large projects.
 - **Stability**: Built stability practices across multiple projects, covering error monitoring, log reporting, alerting and troubleshooting.
-- **Other**: WeChat official accounts and Hybrid App (JSBridge); Amap, Tencent, Baidu and Google Maps SDKs; Node.js (Express, Koa, MongoDB); CSS2/CSS3, SASS/LESS, PostCSS; Karma and Mocha; Git with GitHub workflow and gitflow.
+- **Other**: WeChat official accounts and Hybrid App (JSBridge); Amap, Tencent, Baidu and Google Maps SDKs; Node.js (Express, Koa, MongoDB); CSS2/CSS3, SASS/LESS, PostCSS; Karma and Mocha; Git with GitHub Flow and gitflow.
 
 ## Other Skills
 
